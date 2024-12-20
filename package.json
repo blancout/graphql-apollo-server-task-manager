@@ -1,0 +1,23 @@
+{
+  "name": "task-manager-apollo-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "compile": "tsc",
+    "start1": "npm run compile && nodemon --trace-warnings --experimental-specifier-resolution=node ./dist/index.js",
+    "start": "npm run compile && nodemon ./dist/index.js"
+  },
+  "keywords": [],
+  "author": "Felipe Santos",
+  "license": "ISC",
+  "dependencies": {
+    "@apollo/server": "4.6.0",
+    "graphql": "16.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "18.15.11",
+    "typescript": "5.0.4"
+  }
+}
