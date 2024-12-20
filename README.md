@@ -10,6 +10,9 @@
 #
 # Exemplos de comandos graphql:
 # query ExampleQueryTask { tasks { id title description status created_at }}
+# query ExampleQueryTask {
+# 
+# query ExampleQueryTask {task(id: "7815696ecbf1c96e6894b779456d330e") {id title description}}
 #
 # mutation ExampleDeleteTask{deleteTask(id: "7815696ecbf1c96e6894b779456d330e")}
 # 

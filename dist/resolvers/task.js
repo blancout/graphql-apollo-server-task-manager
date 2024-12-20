@@ -2,6 +2,7 @@ import tasks from "../data/tasks";
 const taskResolvers = {
     Query: {
         tasks: () => tasks,
+        task: (_, { id }) => tasks.find((task) => task.id === id)
     },
     Mutation: {
         createTask: (_, { title, description, status, created_at }) => {

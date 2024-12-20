@@ -10,6 +10,7 @@ const taskTypeDefs = `#graphql
 
   type Query {
     tasks: [Task]
+    task(id: String!): [Task]
   } 
 
   type Mutation {

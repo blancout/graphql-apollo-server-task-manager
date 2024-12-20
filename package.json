@@ -6,8 +6,8 @@
   "type": "module",
   "scripts": {
     "compile": "tsc",
-    "start1": "npm run compile && nodemon --trace-warnings --experimental-specifier-resolution=node ./dist/index.js",
-    "start": "npm run compile && nodemon ./dist/index.js"
+    "start": "npm run compile && nodemon --trace-warnings --experimental-specifier-resolution=node ./dist/index.js",
+    "start1": "npm run compile && nodemon ./dist/index.js"
   },
   "keywords": [],
   "author": "Felipe Santos",

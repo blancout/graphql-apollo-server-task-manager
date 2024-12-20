@@ -1,8 +1,10 @@
+import { argsToArgsConfig } from "graphql/type/definition";
 import tasks from "../data/tasks"
 
 const taskResolvers = {
   Query: {
     tasks: () => tasks,
+    task: (_, { id }) => tasks.find((task) => task.id === id)
   },
 
   Mutation: {
