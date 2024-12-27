@@ -1,5 +1,5 @@
 import { argsToArgsConfig } from "graphql/type/definition";
-import tasks from "../data/tasks"
+import tasks from "../data/tasks.js"
 
 const taskResolvers = {
   Query: {
